@@ -13,7 +13,8 @@ As this project evolves, we'll try to increase the range of classes and methods
 to help a number even bigger of developers.
 
 Let us know if you have any classes or methods to be included on the project.
-You can track our development at https://github.com/eFuzyon/eFuzyon
+You can track our development at https://github.com/eFuzyon/eFuzyon/
+More information at https://efuzyon.github.io/eFuzyon-Project/
 
 2. REQUIREMENTS
 
@@ -35,6 +36,7 @@ number of bugs and be a little bit rough around the edges.
 
 Let us know if you have any classes or methods to be included on the project.
 You can track our development at https://github.com/eFuzyon/eFuzyon
+More information at https://efuzyon.github.io/eFuzyon-Project/
 
 5. LICENSES
 
