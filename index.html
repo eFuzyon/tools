@@ -62,7 +62,28 @@ You can track our development at <a href="https://github.com/eFuzyon/eFuzyon">ht
 check the "demo" folder for usage examples.</p>
 
 <h3>
-<a name="4-troubleshooting" class="anchor" href="#4-troubleshooting"><span class="octicon octicon-link"></span></a>4. TROUBLESHOOTING</h3>
+<a name="4-usage-example" class="anchor" href="#4-usage-example"><span class="octicon octicon-link"></span></a>4. USAGE EXAMPLE</h3>
+
+<pre><code>&lt;?php
+    // Include the eFuzyon bootstrap
+    include "../../lib/efuzyon.init.php";
+
+    // Add the raw value to a variable
+    $value = "&lt;strong&gt;H'i! Thîs ís ä tëst.&lt;/strong&gt;";
+
+    // Generate URI from the raw value
+    $newValue = eFuzyon\URI::Generate($value, array(
+        "clean" =&gt; true, // Default: false
+        "separator" =&gt; "-" // Default: "-"
+    ));
+
+    // Output the URI
+    echo $newValue; // The output will be: "hi-this-is-a-teste"
+?&gt;
+</code></pre>
+
+<h3>
+<a name="5-troubleshooting" class="anchor" href="#5-troubleshooting"><span class="octicon octicon-link"></span></a>5. TROUBLESHOOTING</h3>
 
 <p>This version of the project is still in beta phase and as such, may contain a 
 number of bugs and be a little bit rough around the edges.</p>
@@ -71,7 +92,7 @@ number of bugs and be a little bit rough around the edges.</p>
 You can track our development at <a href="https://github.com/eFuzyon/eFuzyon">https://github.com/eFuzyon/eFuzyon</a></p>
 
 <h3>
-<a name="5-licenses" class="anchor" href="#5-licenses"><span class="octicon octicon-link"></span></a>5. LICENSES</h3>
+<a name="6-licenses" class="anchor" href="#6-licenses"><span class="octicon octicon-link"></span></a>6. LICENSES</h3>
 
 <p>The "eFuzyon Project" is distributed under the MIT License v2.0.
 Find out more at <a href="http://en.wikipedia.org/wiki/MIT_License">http://en.wikipedia.org/wiki/MIT_License</a></p>
