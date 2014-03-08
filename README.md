@@ -5,7 +5,9 @@ eFuzyon v1.0
 
 The "eFuzyon Project" was created by "eFuzyon Technology" to help PHP developers
 with boring tasks like cleaning up strings, generating URI strings, and others.
-Our main focus is to increase productivity while developing with PHP.
+
+Our main focus is to increase your productivity while maintaining or creating a
+certain degree of organization on your code.
 
 As this project evolves, we'll try to increase the range of classes and methods
 to help a number even bigger of developers.
