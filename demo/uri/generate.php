@@ -8,7 +8,8 @@
     // Generate URI from the raw value
     $newValue = eFuzyon\URI::Generate($value, array(
         "clean" => true, // Default: false
-        "separator" => "-" // Default: "-"
+        "separator" => "-", // Default: "-"
+        "unique" => true // Default: false
     ));
 
     // Output the URI

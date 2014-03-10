@@ -34,18 +34,13 @@
             // Setting the output var
             $output = $original;
 
-            // If $opt exists, verify the following options
-            if( $opt ):
+            // Should this method clean the value before generating the URI?
+            if( $opt["clean"] ):
 
-                // Should this method clean the value before generating the URI?
-                if( $opt["clean"] ):
-
-                    $output = String::Clean($output, array(
-                        "strip_tags" => true,
-                        "trim" => true
-                    ));
-
-                endif;
+                $output = String::Clean($output, array(
+                    "strip_tags" => true,
+                    "trim" => true
+                ));
 
             endif;
 
@@ -57,6 +52,11 @@
             $output = preg_replace("/[^a-zA-Z0-9\/_| -]/", '', $output);
             $output = strtolower(trim($output, $separator));
             $output = preg_replace("/[\/_| -]+/", $separator, $output);
+
+            // Should this method generates an unique URI?
+            if( $opt["unique"] ):
+                $output .= $separator . uniqid();
+            endif;
 
             // Return the URI
             return $output;
