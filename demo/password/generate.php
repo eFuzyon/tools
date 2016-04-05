@@ -1,6 +1,6 @@
 <?php
     // Include the efuzyon bootstrap
-    include "../../lib/efuzyon.init.php";
+    include "../../efuzyon.init.php";
 
     // Add the password to a variable
     $password = "thisismypassword123";

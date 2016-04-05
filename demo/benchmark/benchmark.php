@@ -1,6 +1,6 @@
 <?php
     // Include the efuzyon bootstrap
-    include "../../lib/efuzyon.init.php";
+    include "../../efuzyon.init.php";
 
     // Set the start time
     eFuzyon\Benchmark::Start();

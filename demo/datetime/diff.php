@@ -1,6 +1,6 @@
 <?php
     // Include the efuzyon bootstrap
-    include "../../lib/efuzyon.init.php";
+    include "../../efuzyon.init.php";
 
     // You can use unix Timestamp
     #$begin = time();

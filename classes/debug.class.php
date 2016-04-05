@@ -1,9 +1,10 @@
 <?php
+
     /*****
      * This class is used to help you debugging your code.
      * Access the demo folder to see usage examples.
      *
-     * @namespace: efuzyon
+     * @namespace: eFuzyon
      * @class: Debug
      * @author: Leandro Sanches
      * @version: v1.0
