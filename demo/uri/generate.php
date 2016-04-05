@@ -1,6 +1,6 @@
 <?php
     // Include the efuzyon bootstrap
-    include "../../lib/efuzyon.init.php";
+    include "../../efuzyon.init.php";
 
     // Add the raw value to a variable
     $value = "<strong>H'i! Thîs ís ä tëst.</strong>";

@@ -1,9 +1,10 @@
 <?php
+
     /*****
      * This class is used to manipulate passwords on your code.
      * Access the demo folder to see usage examples.
      *
-     * @namespace: efuzyon
+     * @namespace: eFuzyon
      * @class: Password
      * @author: Leandro Sanches
      * @version: v1.0
