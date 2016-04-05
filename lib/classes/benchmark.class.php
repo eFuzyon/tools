@@ -10,7 +10,7 @@
      * @url: https://github.com/eFuzyon/eFuzyon
      *****/
 
-    namespace efuzyon;
+    namespace eFuzyon;
 
     class Benchmark {
 
