@@ -1,4 +1,4 @@
 <?php
 
     # Composer
-    require "../../lib/vendor/autoload.php";
+    require "vendor/autoload.php";
