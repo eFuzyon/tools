@@ -1,0 +1,20 @@
+{
+	"name": "efuzyon/efuzyon-project",
+	"authors": [
+		{
+			"name": "Leandro Sanches",
+			"email": "leandro.sanches@arcasolutions.com"
+		}
+	],
+	"require": {},
+	"autoload": {
+		"classmap": [
+			"classes/string.class.php",
+			"classes/uri.class.php",
+			"classes/password.class.php",
+			"classes/debug.class.php",
+			"classes/datetime.class.php",
+			"classes/benchmark.class.php"
+		]
+	}
+}
