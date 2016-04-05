@@ -3,10 +3,12 @@
 	"authors": [
 		{
 			"name": "Leandro Sanches",
-			"email": "leandro.sanches@arcasolutions.com"
+			"email": "leandro.sanches@efuzyon.com"
 		}
 	],
-	"require": {},
+	"require": {
+		"php": ">=5.3.0"
+	},
 	"autoload": {
 		"classmap": [
 			"classes/string.class.php",
