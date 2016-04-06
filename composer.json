@@ -1,5 +1,10 @@
 {
 	"name": "efuzyon/efuzyon-project",
+	"type": "library",
+    "description": "eFuzyon Project",
+    "keywords": ["helper", "library", "lib"],
+    "homepage": "https://github.com/eFuzyon/eFuzyon-Project",
+    "license": "MIT",
 	"authors": [
 		{
 			"name": "Leandro Sanches",
@@ -18,5 +23,11 @@
 			"classes/datetime.class.php",
 			"classes/benchmark.class.php"
 		]
-	}
+	},
+	"minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.2-dev"
+        }
+    }
 }
