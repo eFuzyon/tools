@@ -13,9 +13,10 @@
 
     namespace eFuzyon;
 
-    class Debug {
+class Debug
+{
 
-        /*****
+    /*****
         * This method generates a var_dump with <pre> around it.
         *
         * @static
@@ -24,25 +25,23 @@
         * @return string $output
         *****/
 
-        static public function Dump(){
+        public static function Dump()
+        {
 
             // Geting all arguments of this method
             $args = func_get_args();
 
-            if( $args ):
+            if ($args):
 
                 // Foreach argument, execute a var_dump with <pre> around it
-                foreach( $args as $item ):
+                foreach ($args as $item):
                     echo "<pre>";
-                    var_dump($item);
-                    echo "</pre>";
-                endforeach;
-
-            else:
+            var_dump($item);
+            echo "</pre>";
+            endforeach; else:
                 // If there isn't any arguments, it will output "<pre>NULL</pre>"
                 echo "<pre>NULL</pre>";
             endif;
-
         }
 
         /*****
@@ -54,25 +53,22 @@
         * @return string $output
         *****/
 
-        static public function Printr(){
+        public static function Printr()
+        {
 
             // Geting all arguments of this method
             $args = func_get_args();
 
-            if( $args ):
+            if ($args):
 
                 // Foreach argument, execute a print_r with <pre> around it
-                foreach( $args as $item ):
+                foreach ($args as $item):
                     echo "<pre>";
-                    print_r($item);
-                    echo "</pre>";
-                endforeach;
-
-            else:
+            print_r($item);
+            echo "</pre>";
+            endforeach; else:
                 // If there isn't any arguments, it will output "<pre>NULL</pre>"
                 echo "<pre>NULL</pre>";
             endif;
-
         }
-
-    }
+}

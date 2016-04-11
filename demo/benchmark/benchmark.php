@@ -7,7 +7,7 @@
 
     // Code
     $counter = 0;
-    foreach( range(0, 1000000) as $item ):
+    foreach (range(0, 1000000) as $item):
         $counter++;
     endforeach;
 

@@ -13,9 +13,10 @@
 
     namespace eFuzyon;
 
-    class Password {
+class Password
+{
 
-        /*****
+    /*****
         * This method generates a hash from password according to your
         * parameters and returns it.
         *
@@ -25,7 +26,8 @@
         * @return string $output
         *****/
 
-        static public function Generate( $value = false, $opt = array() ){
+        public static function Generate($value = false, $opt = array())
+        {
 
             // Making a copy of the original $value
             $original = $value;
@@ -34,20 +36,17 @@
             $output = $original;
 
             // Setting the public key
-            $publickey = ( $opt['public-key'] ) ? $opt['public-key'] : "efuzyon-project-on-github" ;
+            $publickey = ($opt['public-key']) ? $opt['public-key'] : "efuzyon-project-on-github" ;
 
             // Generating hash
-            if( function_exists('hash_hmac') ):
+            if (function_exists('hash_hmac')):
                 $output = hash_hmac("md5", md5($output), md5($publickey));
-                $output = md5($output);
-            else:
+            $output = md5($output); else:
                 $output = md5($output) . md5($publickey);
-                $output = md5($output);
+            $output = md5($output);
             endif;
 
             // Return the new value
             return $output;
-
         }
-
-    }
+}
