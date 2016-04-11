@@ -13,9 +13,10 @@
 
     namespace eFuzyon;
 
-    class Benchmark {
+class Benchmark
+{
 
-        /*****
+    /*****
         * This variables are used to calculate how long the code took to be
         * executed.
         *
@@ -24,7 +25,7 @@
         *****/
 
         private static $start;
-        private static $finish;
+    private static $finish;
 
         /*****
         * This method sets the start time.
@@ -35,11 +36,10 @@
         * @return true
         *****/
 
-        static public function Start(){
-
-            self::$start = microtime(TRUE);
+        public static function Start()
+        {
+            self::$start = microtime(true);
             return true;
-
         }
 
         /*****
@@ -50,11 +50,10 @@
         * Finish - Finish()
         * @return true
         *****/
-        static public function Finish(){
-
-            self::$finish = microtime(TRUE);
+        public static function Finish()
+        {
+            self::$finish = microtime(true);
             return true;
-
         }
 
         /*****
@@ -65,10 +64,8 @@
         * Result - Result()
         * @return float
         *****/
-        static public function Result(){
-
+        public static function Result()
+        {
             return (self::$finish - self::$start);
-
         }
-
-    }
+}

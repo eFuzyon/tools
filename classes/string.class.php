@@ -13,9 +13,10 @@
 
     namespace eFuzyon;
 
-    class String {
+class String
+{
 
-        /*****
+    /*****
         * This method cleans a raw value according to your parameters and
         * returns it.
         *
@@ -25,7 +26,8 @@
         * @return string $output
         *****/
 
-        static public function Clean( $value = false, $opt = array() ){
+        public static function Clean($value = false, $opt = array())
+        {
 
             // Making a copy of the original $value
             $original = $value;
@@ -34,32 +36,31 @@
             $output = $original;
 
             // If $opt exists, verify the following options
-            if( $opt ):
+            if ($opt):
 
                 // Should this method remove HTML code from the value?
-                if( $opt["strip_tags"] ):
+                if ($opt["strip_tags"]):
                     $output = strip_tags($output);
-                endif;
+            endif;
 
                 // Should this method trim the value?
-                if( $opt["trim"] ):
+                if ($opt["trim"]):
                     $output = trim($output);
-                endif;
+            endif;
 
                 // Should this method add slashes do the value?
-                if( $opt["addslashes"] ):
+                if ($opt["addslashes"]):
                     $output = addslashes($output);
-                endif;
+            endif;
 
                 // Should this method remove slashes do the value?
-                if( $opt["removeslashes"] ):
+                if ($opt["removeslashes"]):
                     $output = stripslashes($output);
-                endif;
+            endif;
 
             endif;
 
             // Return the new value
             return $output;
-
         }
-    }
+}

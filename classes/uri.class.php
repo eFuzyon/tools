@@ -13,9 +13,10 @@
 
     namespace eFuzyon;
 
-    class URI {
+class URI
+{
 
-        /*****
+    /*****
         * This method generates a URI from a string according to your parameters
         * and returns it.
         * 
@@ -28,7 +29,8 @@
         * @return string $output
         *****/
 
-        static public function Generate( $value = false, $opt = array() ){
+        public static function Generate($value = false, $opt = array())
+        {
 
             // Making a copy of the original $value
             $original = $value;
@@ -36,7 +38,7 @@
             $output = $original;
 
             // Should this method clean the value before generating the URI?
-            if( $opt["clean"] ):
+            if ($opt["clean"]):
 
                 $output = String::Clean($output, array(
                     "strip_tags" => true,
@@ -46,7 +48,7 @@
             endif;
 
             // Seeting separator
-            $separator = ( $opt["separator"] ) ? $opt["separator"] : "-" ;
+            $separator = ($opt["separator"]) ? $opt["separator"] : "-" ;
 
             // Generate URI from string
             $output = iconv('UTF-8', 'ASCII//TRANSLIT', $output);
@@ -55,12 +57,11 @@
             $output = preg_replace("/[\/_| -]+/", $separator, $output);
 
             // Should this method generates an unique URI?
-            if( $opt["unique"] ):
+            if ($opt["unique"]):
                 $output .= $separator . uniqid();
             endif;
 
             // Return the URI
             return $output;
-
         }
-    }
+}
