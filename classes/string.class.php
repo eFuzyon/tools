@@ -39,22 +39,22 @@ class String
             if ($opt):
 
                 // Should this method remove HTML code from the value?
-                if ($opt["strip_tags"]):
+                if (isset($opt["strip_tags"])):
                     $output = strip_tags($output);
             endif;
 
                 // Should this method trim the value?
-                if ($opt["trim"]):
+                if (isset($opt["trim"])):
                     $output = trim($output);
             endif;
 
                 // Should this method add slashes do the value?
-                if ($opt["addslashes"]):
+                if (isset($opt["addslashes"])):
                     $output = addslashes($output);
             endif;
 
                 // Should this method remove slashes do the value?
-                if ($opt["removeslashes"]):
+                if (isset($opt["removeslashes"])):
                     $output = stripslashes($output);
             endif;
 

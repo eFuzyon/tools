@@ -36,7 +36,7 @@ class Password
             $output = $original;
 
             // Setting the public key
-            $publickey = ($opt['public-key']) ? $opt['public-key'] : "efuzyon-project-on-github" ;
+            $publickey = (isset($opt['public-key'])) ? $opt['public-key'] : "efuzyon-project-on-github" ;
 
             // Generating hash
             if (function_exists('hash_hmac')):

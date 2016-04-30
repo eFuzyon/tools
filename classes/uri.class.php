@@ -48,7 +48,7 @@ class URI
             endif;
 
             // Seeting separator
-            $separator = ($opt["separator"]) ? $opt["separator"] : "-" ;
+            $separator = (isset($opt["separator"])) ? $opt["separator"] : "-" ;
 
             // Generate URI from string
             $output = iconv('UTF-8', 'ASCII//TRANSLIT', $output);
