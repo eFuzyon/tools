@@ -3,7 +3,7 @@
 	"type": "library",
     "description": "eFuzyon Project",
     "keywords": ["helper", "library", "lib"],
-    "homepage": "https://github.com/eFuzyon/eFuzyon-Project",
+    "homepage": "https://github.com/eFuzyon/tools",
     "license": "MIT",
 	"authors": [
 		{
