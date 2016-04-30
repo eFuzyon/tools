@@ -3,7 +3,7 @@ eFuzyon v1.0
 
 1. OVERVIEW
 
-The "eFuzyon Project" was created by "eFuzyon Technology" to help PHP developers
+The "eFuzyon Tools" was created by "eFuzyon Technology" to help PHP developers
 with boring tasks like cleaning up strings, generating URI strings, and others.
 
 Our main goal is to increase your productivity while maintaining or creating a 
@@ -40,7 +40,7 @@ More information at https://efuzyon.github.io/tools/
 
 5. LICENSES
 
-The "eFuzyon Project" is distributed under the MIT License v2.0.
+The "eFuzyon Tools" is distributed under the MIT License v2.0.
 Find out more at http://en.wikipedia.org/wiki/MIT_License
 
 PHP and related libraries are distributed under the PHP License v3.01.
