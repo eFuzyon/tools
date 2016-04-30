@@ -15,14 +15,9 @@
 		"php": ">=5.3.0"
 	},
 	"autoload": {
-		"classmap": [
-			"classes/string.class.php",
-			"classes/uri.class.php",
-			"classes/password.class.php",
-			"classes/debug.class.php",
-			"classes/datetime.class.php",
-			"classes/benchmark.class.php"
-		]
+		"psr-4": {
+			"eFuzyon\\": "classes/"
+		}
 	},
 	"minimum-stability": "dev",
     "extra": {

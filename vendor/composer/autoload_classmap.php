@@ -6,10 +6,4 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'eFuzyon\\Benchmark' => $baseDir . '/classes/benchmark.class.php',
-    'eFuzyon\\Datetime' => $baseDir . '/classes/datetime.class.php',
-    'eFuzyon\\Debug' => $baseDir . '/classes/debug.class.php',
-    'eFuzyon\\Password' => $baseDir . '/classes/password.class.php',
-    'eFuzyon\\String' => $baseDir . '/classes/string.class.php',
-    'eFuzyon\\URI' => $baseDir . '/classes/uri.class.php',
 );
